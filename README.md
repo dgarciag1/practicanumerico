@@ -1,0 +1,2 @@
+# practicanumerico
+practica análisis numérico
