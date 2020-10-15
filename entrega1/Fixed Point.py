@@ -25,7 +25,7 @@ def fixedPointMethod(fx, gx, x0, tolerance, iterations):
 fx = "ln (sin (x)**2+1)-1/2"
 gx = "ln (sin (x)**2+1)-1/2"
 x0 = (-0.5)
-tolerance = 0.0000001
+tolerance = 0.5e-07
 iterations = 100
 
 fixedPointMethod(fx, gx, x0, tolerance, iterations)

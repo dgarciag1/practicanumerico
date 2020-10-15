@@ -27,6 +27,6 @@ A = [[ 2.0, -1.0,  0.0,  3.0],
 b = [1, 1, 1, 1]
 n = 3
 iterations = 100
-tolerance = 0.0000001
+tolerance = 0.5e-07
 
 gaussianEliminationMethod(A, b, n, iterations, tolerance)

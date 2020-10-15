@@ -31,11 +31,11 @@ def multipleRootsMethod(fx, f1x, f2x, x0, tolerance, iterations):
     print("The function failed in ", iterations, "iterations")
 
 
-fx = "E **x-x-1"
-f1x = "E **x-1"
+fx = "E**x-x-1"
+f1x = "E**x-1"
 f2x = "E**x"
 x0 = (1.0)
-tolerance = 0.0000001
+tolerance = 0.5e-07
 iterations = 100
 
 multipleRootsMethod(fx, f1x, f2x, x0, tolerance, iterations)
