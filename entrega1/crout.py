@@ -15,7 +15,7 @@ def crout(A):
     # we factor
     for i in range(A.shape[0]):
         # var_number is the diagonal number of each column
-        var_number = aux_A[0][0]
+        var_number = aux_A[i][i]
         # if a diagonal number is zero there is no solution for the matrix 
         if(var_number==0):
             print(f"There is no solution for this matrix because the diagonal number in A[{i}][{i}] is zero")
