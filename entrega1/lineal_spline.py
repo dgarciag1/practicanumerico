@@ -14,12 +14,14 @@ def lineal_spline(table):
     matrix = np.zeros((m,m))
     iteration = 0
     b = y_vector
+    #interpolation
     for i in range(0,n):
         matrix[i][iteration] = x_vector[i]
         matrix[i][iteration+1] = 1
         if i >0:
             iteration = iteration + 2
     iteration = 0
+    #continuity
     for i in range(1,n-1):
         matrix[n][iteration] = x_vector[i]
         matrix[n][iteration+1] = 1
