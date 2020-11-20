@@ -9,7 +9,7 @@ def cuadratic_spline(table):
     y_vector = table[1]
     n = len(x_vector)
     x = sm.symbols('x')
-    # we implement the steps of linear splines
+    # we implement the steps of cuadratic splines
     m = 3*(n-1)
     matrix = np.zeros((m,m))
     b = y_vector
