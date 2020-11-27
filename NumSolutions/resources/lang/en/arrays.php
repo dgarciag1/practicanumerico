@@ -7,6 +7,7 @@ return [
     'holder' => [
         'matrix' => 'Enter the A matrix',
         'vector' => 'Enter the b vector',
+        'initial' => 'Enter the initial (x0) vector',
         'iterations' => 'Enter the iterations',
         'tolerance' => 'Enter the tolerance',
         'w_value' => 'Enter the w value',
@@ -15,7 +16,8 @@ return [
         'continue' => 'Continue',
         'calculate' => 'Calculate',
         'error' => 'ERROR',
-        'stages' => 'Stages and X Vector'
+        'stages' => 'Stages and X Vector',
+        'jacobiResults' => 'T,C Vectors and Spectral Radius'
     ],
 
     'elimination' => [
@@ -78,6 +80,9 @@ return [
         'name' => 'Jacobi',
         'matrix' => 'Matrix A',
         'vector' => 'Vector b',
+        'initial' => 'Vector x0',
+        'tolerance' => 'Tolerance',
+        'iterations' => 'Nmax',
         'results' => 'Jacobi Results'
     ],
 
@@ -85,6 +90,9 @@ return [
         'name' => 'Gauss Seidel',
         'matrix' => 'Matrix A',
         'vector' => 'Vector b',
+        'initial' => 'Vector x0',
+        'tolerance' => 'Tolerance',
+        'iterations' => 'Nmax',
         'results' => 'Gauss Seidel Results'
     ],
 
@@ -92,6 +100,10 @@ return [
         'name' => 'SOR',
         'matrix' => 'Matrix A',
         'vector' => 'Vector b',
+        'initial' => 'Vector x0',
+        'tolerance' => 'Tolerance',
+        'w_value' => 'W Value',
+        'iterations' => 'Nmax',
         'results' => 'SOR Results'
     ],
 

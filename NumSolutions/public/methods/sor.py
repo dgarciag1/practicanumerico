@@ -44,12 +44,12 @@ def sor(A,b,x0,tol,w,Nmax):
         i += 1
         
     # we print the results
-    print(f"T:{radius_ct['T']}")
-    print(f"C:{radius_ct['C']}")
-    print(f"Spectral Radius:{radius_ct['Spectral Radius']}")
-    print("|    iter    |     E     |")
+    print(f"T: \n{radius_ct['T']}\n")
+    print(f"C: \n{radius_ct['C']}\n")
+    print(f"Spectral Radius: \n{radius_ct['Spectral Radius']}\n")
+    print("iters")
     for j in range(len(results)):
-        print(f"|  {results[j][0]}  |  {results[j][1]}  |  {results[j][2]}  |")
+        print(f"{results[j][0]},{results[j][1]},{results[j][2]}")
 
     return radius_ct,results
 

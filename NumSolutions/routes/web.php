@@ -61,15 +61,15 @@ Route::post('/arrays/doolittle/results', 'Arrays\DoolittleController@results')->
 Route::get('/arrays/cholesky/initial', 'Arrays\CholeskyController@initial')->name("arrays.cholesky.initial");
 Route::post('/arrays/cholesky/values', 'Arrays\CholeskyController@values')->name("arrays.cholesky.values");
 Route::post('/arrays/cholesky/results', 'Arrays\CholeskyController@results')->name("arrays.cholesky.results");
-Route::get('/arrays/jacobi/initial', 'Arrays\EliminationController@initial')->name("arrays.jacobi.initial");
-Route::post('/arrays/jacobi/values', 'Functions\NewtonController@values')->name("arrays.jacobi.values");
-Route::post('/arrays/jacobi/results', 'Functions\NewtonController@results')->name("arrays.jacobi.results");
-Route::get('/arrays/gauss/initial', 'Arrays\EliminationController@initial')->name("arrays.gauss.initial");
-Route::post('/arrays/gauss/values', 'Functions\SecantController@values')->name("arrays.gauss.values");
-Route::post('/arrays/gauss/results', 'Functions\SecantController@results')->name("arrays.gauss.results");
-Route::get('/arrays/sor/initial', 'Arrays\EliminationController@initial')->name("arrays.sor.initial");
-Route::post('/arrays/sor/values', 'Functions\RootsController@values')->name("arrays.sor.values");
-Route::post('/arrays/sor/results', 'Functions\RootsController@results')->name("arrays.sor.results");
+Route::get('/arrays/jacobi/initial', 'Arrays\JacobiController@initial')->name("arrays.jacobi.initial");
+Route::post('/arrays/jacobi/values', 'Arrays\JacobiController@values')->name("arrays.jacobi.values");
+Route::post('/arrays/jacobi/results', 'Arrays\JacobiController@results')->name("arrays.jacobi.results");
+Route::get('/arrays/gauss/initial', 'Arrays\GaussController@initial')->name("arrays.gauss.initial");
+Route::post('/arrays/gauss/values', 'Arrays\GaussController@values')->name("arrays.gauss.values");
+Route::post('/arrays/gauss/results', 'Arrays\GaussController@results')->name("arrays.gauss.results");
+Route::get('/arrays/sor/initial', 'Arrays\SorController@initial')->name("arrays.sor.initial");
+Route::post('/arrays/sor/values', 'Arrays\SorController@values')->name("arrays.sor.values");
+Route::post('/arrays/sor/results', 'Arrays\SorController@results')->name("arrays.sor.results");
 
 //Routes Interpolation
 

@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header">
                             @if($data["error"]==false) 
-                                {{ __('arrays.holder.stages') }}
+                                {{ __('arrays.holder.jacobiResults') }}
                             @else
                                 {{ __('arrays.holder.error') }}
                             @endif
@@ -22,6 +22,27 @@
                         @endforeach
                     </div>
                 </div>
+                @if($data["error"]==false) 
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th> iter </th>
+                                    <th> E </th>
+                                    <th>   </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    @foreach($data["iters"] as $iter)
+                                    <tr>
+                                        <?php $values = explode(",", $iter) ?>
+                                        @foreach($values as $value) 
+                                            <td>{{ $value }}</td>
+                                        @endforeach
+                                    </tr>
+                                    @endforeach
+                            </tbody>
+                    </table>
+                @endif
             </div>
         </div>
     </div>

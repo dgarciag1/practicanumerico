@@ -9,7 +9,6 @@ def gauss_seidel(A,b,x0,tol,Nmax):
     x0 = strToMatrix.strToMatrix(x0)
     tol = float(tol)
     Nmax= int(Nmax)
-    print(f"A is {A}   b is {b}   x0 is {x0}")
     # here is t matrix, c vector and the spectral radius
     radius_ct = {}
     # here is the iterations of the method
@@ -41,12 +40,12 @@ def gauss_seidel(A,b,x0,tol,Nmax):
         i += 1
         
     # we print the results
-    print(f"T:{radius_ct['T']}")
-    print(f"C:{radius_ct['C']}")
-    print(f"Spectral Radius:{radius_ct['Spectral Radius']}")
-    print("|    iter    |     E     |")
+    print(f"T: \n{radius_ct['T']}\n")
+    print(f"C: \n{radius_ct['C']}\n")
+    print(f"Spectral Radius: \n{radius_ct['Spectral Radius']}\n")
+    print("iters")
     for j in range(len(results)):
-        print(f"|  {results[j][0]}  |  {results[j][1]}  |  {results[j][2]}  |")
+        print(f"{results[j][0]},{results[j][1]},{results[j][2]}")
 
     return radius_ct,results
 

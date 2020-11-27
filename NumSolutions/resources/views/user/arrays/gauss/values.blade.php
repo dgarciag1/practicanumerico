@@ -5,8 +5,8 @@
     @include('util.message')
     <div class="card">
         <div class="card-header">
-            {{ __('arrays.names.elimination') }}
-                <a class="btn btn-outline-info return-btn" href="{{ route('arrays.elimination.initial') }}"><img src="{{ asset('/icons/arrow-return-left.svg') }}" class="delete-icon"></a>
+            {{ __('arrays.names.gauss') }}
+                <a class="btn btn-outline-info return-btn" href="{{ route('arrays.gauss.initial') }}"><img src="{{ asset('/icons/arrow-return-left.svg') }}" class="delete-icon"></a>
         </div>
         <div class="card-body">
             @if($errors->any())
@@ -16,7 +16,7 @@
                 @endforeach
             </ul>
             @endif
-            <form method="POST" action="{{ route('arrays.elimination.results') }}">
+            <form method="POST" action="{{ route('arrays.gauss.results') }}">
                 @csrf
                 <div class="card">
                     <div class="card-header">
@@ -56,6 +56,35 @@
                             @endfor
                         
                     </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">  
+                        {{ __('arrays.holder.initial') }}
+                    </div>
+                    <div class="card-body">
+                                                      
+                            @for ($i = 1; $i <= $data['size']; $i++)
+                                <div class="form-group col-md-1">
+                                    <div class="form-row">    
+                                        <label >{{ $i }}</label>
+                                        <input type="text" class="form-control" placeholder="{{ old('valuex') }}" name="valuex{{$i}}" value="{{ old('valuex') }}" required/>
+                                    </div>
+                                </div>
+                            @endfor
+                        
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row">  
+                            <div class="form-group col-md-6">
+                                <label>{{ __('arrays.gauss.tolerance') }}</label>
+                                <input type="text" class="form-control" placeholder="{{ __('arrays.holder.tolerance') }}" name="tolerance" value="{{ old('tolerance') }}" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>{{ __('arrays.gauss.iterations') }}</label>
+                                <input type="text" class="form-control" placeholder="{{ __('arrays.holder.iterations') }}" name="iterations" value="{{ old('iterations') }}" />
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="form-row">
                         <div class="form-group col-md-12">
