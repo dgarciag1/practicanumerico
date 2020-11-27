@@ -1,0 +1,155 @@
+.card-header, .table-bold{
+    font-weight: bold;
+}
+
+.red-price{
+    color:red;
+    font-weight: bold;
+}
+
+table{
+    text-align: center;
+}
+
+.delete-icon, .show-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.list-picture{
+    width: 190px;
+    height: 190px;
+    padding: 10%;
+    margin-top:5%;
+}
+
+.container-product{
+    width: 250px;
+    height: 300px;
+    margin: 0.5%;
+    -webkit-box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
+}
+
+.product-information, .product-information-2{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.product-information{
+    background: #3d1177;
+    color: white;
+}
+
+.img-container{
+    height: 220px;
+}
+
+.show-image{
+    padding: 5%;
+    width: 200px; 
+    height: 200px;
+}
+
+.show-product-information{
+    margin: 5%; 
+    padding: 5%;
+}
+
+.update-btn{
+    margin-left: 5%;
+}
+
+.delete-btn{
+    margin-left: 6%;
+}
+
+.form{
+    margin: 5%;
+}
+
+#wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+.menu-icon{
+    width: 2.85%;
+    height: 2.85%;
+}
+
+.return-btn{
+    float: right;
+}
+
+.cart-btn{
+    float: left; 
+    margin-top: 0%;
+    background: #3d1177;
+    color: white;
+    border: solid 2px #3d1177;
+}
+
+.add-btn{
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.category-filter{
+    float: right; 
+    width: 500px;
+}
+
+.quantity-column{
+    width: 20%;
+}
+
+.quantity-input{
+    width: 80px;
+}

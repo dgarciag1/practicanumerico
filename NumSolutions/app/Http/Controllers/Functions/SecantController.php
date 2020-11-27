@@ -1,0 +1,68 @@
+<?php
+
+namespace App\Http\Controllers\Functions;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Exception;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Arr;
+
+class SecantController extends Controller
+{
+
+    public function menu()
+    {
+      return view('user.functions.menu');
+    }
+
+    public function values()
+    {
+        return view('user.functions.secant.values');
+    }
+
+    public function results(Request $request)
+    {
+        $request->validate([
+            "function" => "required",
+            "initialX" => "required" ,
+            "secondX" => "required" ,
+            "tolerance" => "required|numeric|gte:0",
+            "iterations" => "required|numeric|gt:0",
+          ]);
+        $data = [];
+        $function = $request->input('function');
+        $initialX = $request->input('initialX');
+        $secondX = $request->input('secondX');
+        $tolerance = $request->input('tolerance');
+        $iterations = $request->input('iterations');
+        $function = '"'.$function.'"';
+        $initialX = '"'.$initialX.'"';
+        $secondX = '"'.$secondX.'"';
+        $tolerance = '"'.$tolerance.'"'; 
+        $iterations = '"'.$iterations.'"';    
+        $data['function'] = $function;
+        $data['initialX'] = $initialX;
+        $data['secondX'] = $secondX;
+        $data['tolerance'] = $tolerance;
+        $data['iterations'] = $iterations;
+        $command = 'python "'.public_path().'\methods\secant_method.py" '."{$function} {$initialX} {$secondX} {$tolerance} {$iterations}";
+        exec($command, $output);
+        $data["title"] = __('functions.secant.results');
+        $data["results"] = $output;
+        $data["error"] = false;
+        if (!(strpos($output[0], "Error") === false)){
+            $data["error"] = true;
+        }else{
+            $i = count($data["results"]);
+            $ivalues = explode(",", $data["results"][$i-1]);
+            $data["xm"] = $ivalues[1];
+        }
+        return view('user.functions.secant.results')->with("data",$data);
+        
+    }
+
+   
+
+}
