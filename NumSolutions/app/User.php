@@ -63,11 +63,4 @@ class User extends Authenticatable
         $this->attributes['credit'] = $credit;
     }
 
-    public function sales(){
-        $this->hasMany(Sales::class);
-    }
-
-    public function routineusers(){
-        return $this->hasMany(Routineuser::class);
-    }
 }

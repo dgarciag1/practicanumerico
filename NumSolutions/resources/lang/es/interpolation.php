@@ -1,48 +1,70 @@
 <?php
 
 return [
-    'title' => 'Interpolacion',
-    'noRoutines' => 'Do not have any routines',
-    'createRoutine' => 'Create Routine',
-    'detail' => 'Routine Detail',
-    'suggestion' => 'Exercise Routine Suggestion',
-    'incrementalSearch' => [
-        'update' => 'Update Routine',
-        'delete' => 'Delete Routine',
-        'name' => 'Incremental Search',
+    'title' => 'Interpolación',
+    'methods' => 'Métodos de Interpolación',
+
+    'holder' => [
+        'xvector' => 'Ingrese el vector X',
+        'yvector' => 'Ingrese el vector Y',
+        'inputSize' => 'Ingrese el tamaño de la tabla',
+        'size' => 'Tamaño de Tabla',
+        'continue' => 'Continuar',
+        'calculate' => 'Calcular',
+        'error' => 'ERROR',
+        'results' => 'Resultados',
     ],
 
-    'label' => [
-        'routineName' => 'Routine Name',
-        'description' => 'Routine Description',
-        'minimumBMI' => 'Minimum BMI',
-        'maximumBMI' => 'Maximum BMI',
-        'add' => 'Add Routine',
-        'info' => 'Routine Information',
-        'weight' => 'Weight(Kg)',
-        'height' => 'Height(cm)'
+    'vandermonde' => [
+        'name' => 'Vandermonde',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Resultados de Vandermonde'
     ],
 
-    'info' => [
-        'name' => 'Name:',
-        'description' => 'Description:',
-        'minimumBMI' => 'The minimum body mass for this routine is:',
-        'maximumBMI' => 'The maximum body mass for this routine is:',
-        'calculated' => 'Calculated Data',
-        'bodyMI' => 'Your Body Mass Index is:',
-        'bodyState' => 'Your body state is:',
-        'recommend' => 'Recommended Routine',
-        'myRoutine' => 'My Routine',
-        'notFounded' => 'There is no routine for your BMI, try again',
-        'error' => 'Error'
+    'newtondiv' => [
+        'name' => 'Newton(Diferencias divididas)',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Resultados de Newton'
     ],
 
-    'table' => [
-        'id' => 'Id',
-        'name' => 'Name',
-        'show' => 'Show Description',
-        'option' => 'Option'
+    'lagrange' => [
+        'name' => 'Lagrange',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Resultados de Lagrange'
+    ],
+
+    'lineal' => [
+        'name' => 'Trazadores Lineales',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Resultados de Trazadores Lineales'
+    ],
+
+    'cuadratic' => [
+        'name' => 'Trazadores Cuadráticos',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Resultados de Trazadorea Cuadráticos'
+    ],
+
+    'cubic' => [
+        'name' => 'Trazadores Cúbicos',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Resultados de Trazadores Cúbicos'
+    ],
+
+    'names' => [
+        'vandermonde' => 'Vandermonde',
+        'newtondiv' => 'Newton(Diferencias Divididas)',
+        'lagrange' => 'Lagrange',
+        'lineal' => 'Trazadores Lineales',
+        'cuadratic' => 'Trazadores Cuadráticos',
+        'cubic' => 'Trazadores Cúbicos'
     ]
-
-
+    
 ];
+

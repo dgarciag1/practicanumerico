@@ -6,6 +6,19 @@
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/customStyle.css') }}" rel="stylesheet">
+
+    <script src="https://unpkg.com/mathjs@8.0.1/lib/browser/math.js"></script>
+
+    <!-- load http://maurizzzio.github.io/function-plot/ -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // ...options...
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="app">
@@ -63,7 +76,9 @@
                     <ul class="navbar-nav mr-auto">
                         <a class="navbar-brand" href="{{ route('user.interpolation.menu') }}">{{ __('interpolation.title') }}</a>
                     </ul>
-
+                    <ul class="navbar-nav mr-auto">
+                        <a class="navbar-brand" href="{{ route('user.graph') }}">{{ __('graph.title') }}</a>
+                    </ul>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Future authentication Links -->

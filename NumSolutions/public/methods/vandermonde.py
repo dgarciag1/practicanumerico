@@ -38,11 +38,11 @@ def vandermonde(table):
             else:
                 number = f"{results[i]}"
             if(i==len(results)-1): 
-            string = string+number
+                string = string+number
             elif(i==len(results)-2):
-            string = string+f"{number}x"
+                string = string+f"{number}x"
             else:
-            string = string+f"{number}x^{len(results)-i-1}"
+                string = string+f"{number}x^{len(results)-i-1}"
         print(string)
         return results
     except:

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -92,16 +93,9 @@ Route::get('/interpolation/cubic/initial', 'Interpolation\CubicController@initia
 Route::post('/interpolation/cubic/values', 'Interpolation\CubicController@values')->name("interpolation.cubic.values");
 Route::post('/interpolation/cubic/results', 'Interpolation\CubicController@results')->name("interpolation.cubic.results");
 
-Route::get('/user/routine', 'User\RoutineController@menu')->name("user.routine.menu");
-Route::get('/user/routine/recommend', 'User\RoutineController@recommend')->name("user.routine.recommend");
-Route::post('/user/routine/calculate', 'User\RoutineController@calculate')->name("user.routine.calculate");
-Route::get('/user/routine/list', 'User\RoutineController@list')->name("user.routine.list");
-Route::get('/user/routine/show/{id}', 'User\RoutineController@show')->name("user.routine.show");
-Route::get('/user/routine/myroutine', 'User\RoutineController@myroutine')->name("user.routine.myroutine");
-
-//Allies Products
-Route::get('/user/ally', 'User\AllyController@menu')->name("user.ally.menu");
-Route::get('/user/ally/list', 'User\AllyController@list')->name("user.ally.list");
+//Graph
+Route::GET('/Graph','GraphController@grapher')->name("user.graph");
+Route::POST('/Graph','GraphController@grapherUri')->name("urlgraph");
 
 // Lang
 Route::get('lang/{lang}','LanguageController@switchLang')->name('lang.switch');

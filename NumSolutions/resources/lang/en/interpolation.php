@@ -51,7 +51,7 @@ return [
     ],
 
     'cubic' => [
-        'name' => 'Cubic',
+        'name' => 'Cubic Spline',
         'xvector' => 'Vector X',
         'yvector' => 'Vector Y',
         'results' => 'Cubic Spline Results'

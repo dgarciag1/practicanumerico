@@ -6,7 +6,7 @@
         <div class="col-md-8">
             @include('util.message')
             <div class="card">
-                <div class="card-header">{{ __('interpolation.names.cuadratic') }}</div>
+                <div class="card-header">{{ __('interpolation.names.vandermonde') }}</div>
                     <div class="card-body">
                     @if($errors->any())
                         <ul id="errors">
@@ -16,7 +16,7 @@
                         </ul>
                     @endif
 
-                    <form method="POST" action="{{ route('interpolation.cuadratic.values') }}">
+                    <form method="POST" action="{{ route('interpolation.vandermonde.values') }}">
                         @csrf
                         <div class="form-row">
                                 <div class="form-group col-md-6">
