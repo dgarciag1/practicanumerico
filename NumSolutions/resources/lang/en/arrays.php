@@ -25,71 +25,74 @@ return [
         'results' => 'Simple Gaussian Elimination Results'
     ],
 
-    'bisection' => [
-        'name' => 'Bisection',
-        'function' => 'Function(fx)',
-        'aPoint' => 'Lower Point(a)',
-        'bPoint' => 'Upper Point(b)',
-        'tolerance' => 'Tolerance',
-        'iterations' => 'Nmax',
-        'results' => 'Bisection Results',
-        'approximation' => 'An approximation of the root was found in '
+    'partial' => [
+        'name' => 'Partial Pivot',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'Partial Pivot Results'
     ],
 
-    'falseRule' => [
-        'name' => 'False Rule',
-        'function' => 'Function(fx)',
-        'aPoint' => 'Lower Point(a)',
-        'bPoint' => 'Upper Point(b)',
-        'tolerance' => 'Tolerance',
-        'iterations' => 'Nmax',
-        'results' => 'False Rule Results',
-        'approximation' => 'An approximation of the root was found in '
+    'total' => [
+        'name' => 'Total Pivot',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'Total Pivot Results'
     ],
 
-    'fixedPoint' => [
-        'name' => 'Fixed Point',
-        'function' => 'Function(fx)',
-        'gFunction' => 'Function(gx)',
-        'initialX' => 'Initial X(x0)',
-        'tolerance' => 'Tolerance',
-        'iterations' => 'Nmax',
-        'results' => 'Fixed Point Results',
-        'approximation' => 'An approximation of the root was found in '
+    'lusimple' => [
+        'name' => 'LU Simple',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'LU Simple Results'
     ],
 
-    'newton' => [
-        'name' => 'Newton',
-        'function' => 'Function(fx)',
-        'dxFunction' => 'Derived Function(dfx)',
-        'initialX' => 'Initial X(x0)',
-        'tolerance' => 'Tolerance',
-        'iterations' => 'Nmax',
-        'results' => 'Newton Results',
-        'approximation' => 'An approximation of the root was found in '
+    'lupartial' => [
+        'name' => 'LU Partial',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'LU Partial Results'
     ],
 
-    'secant' => [
-        'name' => 'Secant',
-        'function' => 'Function(fx)',
-        'initialX' => 'Initial X(x0)',
-        'secondX' => 'Second X(x1)',
-        'tolerance' => 'Tolerance',
-        'iterations' => 'Nmax',
-        'results' => 'Secant Results',
-        'approximation' => 'An approximation of the root was found in '
+    'crout' => [
+        'name' => 'Crout',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'Crout Results'
     ],
 
-    'roots' => [
-        'name' => 'Multiple Roots',
-        'function' => 'Function(fx)',
-        'dxFunction' => 'Derived Function(dfx)',
-        'dxdxFunction' => 'Second Derived Function(2dfx)',
-        'initialX' => 'Initial X(x0)',
-        'tolerance' => 'Tolerance',
-        'iterations' => 'Nmax',
-        'results' => 'Multiple Roots Results',
-        'approximation' => 'An approximation of the root was found in '
+    'doolittle' => [
+        'name' => 'Doolittle',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'Doolittle Results'
+    ],
+
+    'cholesky' => [
+        'name' => 'Cholesky',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'Cholesky Results'
+    ],
+
+    'jacobi' => [
+        'name' => 'Jacobi',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'Jacobi Results'
+    ],
+
+    'gauss' => [
+        'name' => 'Gauss Seidel',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'Gauss Seidel Results'
+    ],
+
+    'sor' => [
+        'name' => 'SOR',
+        'matrix' => 'Matrix A',
+        'vector' => 'Vector b',
+        'results' => 'SOR Results'
     ],
 
     'names' => [

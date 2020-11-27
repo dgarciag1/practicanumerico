@@ -88,14 +88,14 @@ def total_pivot(A,b):
         stages[i+1] = np.array(A)
     for i in range(len(stages)):
         print(f"Stage {i}:")
-        print(stages[i])
+        print(f"{stages[i]}\n")
     x_values = np.array(substitution.backSubs(stages[len(stages)-1]))
     for i in changes:
         auxiliar = x_values[changes[i][0]]
         x_values[changes[i][0]] = x_values[changes[i][1]]
         x_values[changes[i][1]] = auxiliar
     print(f"x: ")
-    print(np.transpose(x_values))    
+    print(f"{np.transpose(x_values)}\n")    
     matrix = np.delete(A, A.shape[1]-1, axis=1)
     matrixT = A.T[A.shape[1]-1]
     return matrix,matrixT,stages,changes

@@ -12,7 +12,6 @@ def cholesky(A,b):
     A = strToMatrix.strToMatrix(A)
     b = strToMatrix.strToMatrix(b)
     aux_A = np.array(A)
-    print(f"aux is {aux_A}")
     determinant = np.linalg.det(aux_A) 
     if determinant == 0:
         print("Determinant equal to 0")
@@ -62,15 +61,15 @@ def cholesky(A,b):
     for i in range(len(l_stages)):
         print(f"Stage {i}:")
         print("L:")
-        print(l_stages[i])
+        print(f"{l_stages[i]}\n")
         print("U:")
-        print(u_stages[i])
+        print(f"{u_stages[i]}\n")
     l_aux = np.vstack((((l_stages[len(l_stages)-1]).T),b))
     z_values = np.array(substitution.progSubsC(l_aux.T))
     u_aux = np.vstack((((u_stages[len(u_stages)-1]).T),z_values))
     x_values = np.array(substitution.backSubsC(u_aux.T))
     print(f"x: ")
-    print(np.transpose(x_values))        
+    print(f"{np.transpose(x_values)}\n")        
     l = lower_triangular
     u = triangular_top
     return l,u,l_stages,u_stages

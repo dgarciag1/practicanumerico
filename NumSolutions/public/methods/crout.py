@@ -49,15 +49,15 @@ def crout(A,b):
     for i in range(len(l_stages)):
         print(f"Stage {i}:")
         print("L:")
-        print(l_stages[i])
+        print(f"{l_stages[i]}\n")
         print("U:")
-        print(u_stages[i])
+        print(f"{u_stages[i]}\n")
     l_aux = np.vstack((((l_stages[len(l_stages)-1]).T),b))
     z_values = np.array(substitution.progSubs(l_aux.T))
     u_aux = np.vstack((((u_stages[len(u_stages)-1]).T),z_values))
     x_values = np.array(substitution.backSubs(u_aux.T))
     print(f"x: ")
-    print(np.transpose(x_values))        
+    print(f"{np.transpose(x_values)}\n")        
     l = lower_triangular
     u = triangular_top
     return l,u,l_stages,u_stages

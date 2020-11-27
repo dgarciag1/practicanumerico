@@ -10,16 +10,16 @@
         </div>
         <div class="list-group list-group-flush">
             <a href="{{ route('arrays.elimination.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.elimination') }}</a>
-            <a href="{{ route('arrays.partial.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.partial') }}</a>
-            <a href="{{ route('arrays.total.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.total') }}</a>
-            <a href="{{ route('arrays.lusimple.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.lusimple') }}</a>
-            <a href="{{ route('arrays.lupartial.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.lupartial') }}</a>
-            <a href="{{ route('arrays.crout.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.crout') }}</a>
-            <a href="{{ route('arrays.doolittle.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.doolittle') }}</a>
-            <a href="{{ route('arrays.cholesky.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.cholesky') }}</a>
-            <a href="{{ route('arrays.jacobi.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.jacobi') }}</a>
-            <a href="{{ route('arrays.gauss.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.gauss') }}</a>
-            <a href="{{ route('arrays.sor.values') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.sor') }}</a>
+            <a href="{{ route('arrays.partial.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.partial') }}</a>
+            <a href="{{ route('arrays.total.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.total') }}</a>
+            <a href="{{ route('arrays.lusimple.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.lusimple') }}</a>
+            <a href="{{ route('arrays.lupartial.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.lupartial') }}</a>
+            <a href="{{ route('arrays.crout.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.crout') }}</a>
+            <a href="{{ route('arrays.doolittle.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.doolittle') }}</a>
+            <a href="{{ route('arrays.cholesky.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.cholesky') }}</a>
+            <a href="{{ route('arrays.jacobi.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.jacobi') }}</a>
+            <a href="{{ route('arrays.gauss.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.gauss') }}</a>
+            <a href="{{ route('arrays.sor.initial') }}" class="list-group-item list-group-item-action bg-light">{{ __('arrays.names.sor') }}</a>
         </div>
     </div>
     <div id="page-content-wrapper">

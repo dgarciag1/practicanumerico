@@ -54,10 +54,10 @@ def partial_pivot(A,b):
         stages[i+1] = np.array(A)
     for i in range(len(stages)):
         print(f"Stage {i}:")
-        print(stages[i])
+        print(f"{stages[i]}\n")
     x_values = np.array(substitution.backSubs(stages[len(stages)-1]))
     print(f"x: ")
-    print(np.transpose(x_values))
+    print(f"{np.transpose(x_values)}\n")
     return stages, x_values
 
 np.set_printoptions(precision=7)
