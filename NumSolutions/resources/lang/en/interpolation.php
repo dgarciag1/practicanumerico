@@ -2,47 +2,68 @@
 
 return [
     'title' => 'Interpolation',
-    'noRoutines' => 'Do not have any routines',
-    'createRoutine' => 'Create Routine',
-    'detail' => 'Routine Detail',
-    'suggestion' => 'Exercise Routine Suggestion',
-    'incrementalSearch' => [
-        'update' => 'Update Routine',
-        'delete' => 'Delete Routine',
-        'name' => 'Incremental Search',
+    'methods' => 'Interpolation Methods',
+
+    'holder' => [
+        'xvector' => 'Enter the X vector',
+        'yvector' => 'Enter the Y vector',
+        'inputSize' => 'Enter the table size',
+        'size' => 'Table Size',
+        'continue' => 'Continue',
+        'calculate' => 'Calculate',
+        'error' => 'ERROR',
+        'results' => 'Results',
     ],
 
-    'label' => [
-        'routineName' => 'Routine Name',
-        'description' => 'Routine Description',
-        'minimumBMI' => 'Minimum BMI',
-        'maximumBMI' => 'Maximum BMI',
-        'add' => 'Add Routine',
-        'info' => 'Routine Information',
-        'weight' => 'Weight(Kg)',
-        'height' => 'Height(cm)'
+    'vandermonde' => [
+        'name' => 'Vandermonde',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Vandermonde Results'
     ],
 
-    'info' => [
-        'name' => 'Name:',
-        'description' => 'Description:',
-        'minimumBMI' => 'The minimum body mass for this routine is:',
-        'maximumBMI' => 'The maximum body mass for this routine is:',
-        'calculated' => 'Calculated Data',
-        'bodyMI' => 'Your Body Mass Index is:',
-        'bodyState' => 'Your body state is:',
-        'recommend' => 'Recommended Routine',
-        'myRoutine' => 'My Routine',
-        'notFounded' => 'There is no routine for your BMI, try again',
-        'error' => 'Error'
+    'newtondiv' => [
+        'name' => 'Newton(Divided Differences)',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Newton Results'
     ],
 
-    'table' => [
-        'id' => 'Id',
-        'name' => 'Name',
-        'show' => 'Show Description',
-        'option' => 'Option'
+    'lagrange' => [
+        'name' => 'Lagrange',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Lagrange Results'
+    ],
+
+    'lineal' => [
+        'name' => 'Lineal Spline',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Lineal Spline Results'
+    ],
+
+    'cuadratic' => [
+        'name' => 'Cuadratic Spline',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Cuadratic Spline Results'
+    ],
+
+    'cubic' => [
+        'name' => 'Cubic',
+        'xvector' => 'Vector X',
+        'yvector' => 'Vector Y',
+        'results' => 'Cubic Spline Results'
+    ],
+
+    'names' => [
+        'vandermonde' => 'Vandermonde',
+        'newtondiv' => 'Newton(Divided Differences)',
+        'lagrange' => 'Lagrange',
+        'lineal' => 'Lineal Spline',
+        'cuadratic' => 'Cuadratic Spline',
+        'cubic' => 'Cubic Spline'
     ]
-
-
+    
 ];

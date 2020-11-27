@@ -25,7 +25,7 @@ class GaussController extends Controller
     public function values(Request $request)
     {
         $request->validate([
-            "size" => "required",
+            "size" => "required|numeric|gt:0",
         ]);
         $data = [];
         $size = $request->input('size');
@@ -35,10 +35,6 @@ class GaussController extends Controller
 
     public function results(Request $request)
     {
-        $request->validate([
-            "tolerance" => "required|numeric|gte:0",
-            "iterations" => "required|numeric|gt:0",
-          ]);
         $size = $request->input('size');
         $vector = "[";
         $matrix = "[";
@@ -82,18 +78,20 @@ class GaussController extends Controller
         $data["error"] = false;
         if (!(strpos($output[0], "Error") === false)){
             $data["error"] = true;
-        }
-        $pos = 0;
-        for($i=0;$i<sizeof($output);$i++){
-            if(!(strpos($output[$i], "iters") === false)){
-                $pos = $i+1;
-                break;
+            $data["results"] = $output;
+        }else{
+            $pos = 0;
+            for($i=0;$i<sizeof($output);$i++){
+                if(!(strpos($output[$i], "iters") === false)){
+                    $pos = $i+1;
+                    break;
+                }
             }
-        }
-        $data["pos_iters"]=$pos;
-
-        $data["iters"] = array_slice($output, $pos);
-        $data["results"] = array_slice($output, 0, $pos-1); 
+            $data["pos_iters"]=$pos;
+            $data["iters"] = array_slice($output, $pos);
+            $data["results"] = array_slice($output, 0, $pos-1); 
+        }   
+        
         return view('user.arrays.gauss.results')->with("data",$data);
         
     }

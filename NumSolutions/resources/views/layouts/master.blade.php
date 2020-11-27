@@ -61,7 +61,7 @@
                         <a class="navbar-brand" href="{{ route('user.arrays.menu') }}">{{ __('arrays.title') }}</a>
                     </ul>
                     <ul class="navbar-nav mr-auto">
-                        <a class="navbar-brand" href="{{ route('user.ally.menu') }}">{{ __('interpolation.title') }}</a>
+                        <a class="navbar-brand" href="{{ route('user.interpolation.menu') }}">{{ __('interpolation.title') }}</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

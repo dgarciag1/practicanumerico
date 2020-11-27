@@ -25,7 +25,7 @@ class LupartialController extends Controller
     public function values(Request $request)
     {
         $request->validate([
-            "size" => "required",
+            "size" => "required|numeric|gt:0",
         ]);
         $data = [];
         $size = $request->input('size');

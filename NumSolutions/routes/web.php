@@ -72,7 +72,25 @@ Route::post('/arrays/sor/values', 'Arrays\SorController@values')->name("arrays.s
 Route::post('/arrays/sor/results', 'Arrays\SorController@results')->name("arrays.sor.results");
 
 //Routes Interpolation
-
+Route::get('/interpolation/menu', 'Interpolation\VandermondeController@menu')->name("user.interpolation.menu");
+Route::get('/interpolation/vandermonde/initial', 'Interpolation\VandermondeController@initial')->name("interpolation.vandermonde.initial");
+Route::post('/interpolation/vandermonde/values', 'Interpolation\VandermondeController@values')->name("interpolation.vandermonde.values");
+Route::post('/interpolation/vandermonde/results', 'Interpolation\VandermondeController@results')->name("interpolation.vandermonde.results");
+Route::get('/interpolation/newtondiv/initial', 'Interpolation\NewtondivController@initial')->name("interpolation.newtondiv.initial");
+Route::post('/interpolation/newtondiv/values', 'Interpolation\NewtondivController@values')->name("interpolation.newtondiv.values");
+Route::post('/interpolation/newtondiv/results', 'Interpolation\NewtondivController@results')->name("interpolation.newtondiv.results");
+Route::get('/interpolation/lagrange/initial', 'Interpolation\LagrangeController@initial')->name("interpolation.lagrange.initial");
+Route::post('/interpolation/lagrange/values', 'Interpolation\LagrangeController@values')->name("interpolation.lagrange.values");
+Route::post('/interpolation/lagrange/results', 'Interpolation\LagrangeController@results')->name("interpolation.lagrange.results");
+Route::get('/interpolation/lineal/initial', 'Interpolation\LinealController@initial')->name("interpolation.lineal.initial");
+Route::post('/interpolation/lineal/values', 'Interpolation\LinealController@values')->name("interpolation.lineal.values");
+Route::post('/interpolation/lineal/results', 'Interpolation\LinealController@results')->name("interpolation.lineal.results");
+Route::get('/interpolation/cuadratic/initial', 'Interpolation\CuadraticController@initial')->name("interpolation.cuadratic.initial");
+Route::post('/interpolation/cuadratic/values', 'Interpolation\CuadraticController@values')->name("interpolation.cuadratic.values");
+Route::post('/interpolation/cuadratic/results', 'Interpolation\CuadraticController@results')->name("interpolation.cuadratic.results");
+Route::get('/interpolation/cubic/initial', 'Interpolation\CubicController@initial')->name("interpolation.cubic.initial");
+Route::post('/interpolation/cubic/values', 'Interpolation\CubicController@values')->name("interpolation.cubic.values");
+Route::post('/interpolation/cubic/results', 'Interpolation\CubicController@results')->name("interpolation.cubic.results");
 
 Route::get('/user/routine', 'User\RoutineController@menu')->name("user.routine.menu");
 Route::get('/user/routine/recommend', 'User\RoutineController@recommend')->name("user.routine.recommend");

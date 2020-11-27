@@ -22,7 +22,15 @@
                         @endforeach
                     </div>
                 </div>
-                @if($data["error"]==false) 
+            </div>
+        </div>
+        @if($data["error"]==false) 
+        <div class="card-body">
+            <div class="card">
+                <div class="card-header">
+                    {{ __('arrays.holder.iters') }}
+                </div>
+                <div class="card-body">
                     <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -42,9 +50,10 @@
                                     @endforeach
                             </tbody>
                     </table>
-                @endif
+                </div>
             </div>
         </div>
+        @endif
     </div>
 </div>
 @endsection

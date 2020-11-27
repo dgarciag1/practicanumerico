@@ -17,7 +17,8 @@ return [
         'calculate' => 'Calculate',
         'error' => 'ERROR',
         'stages' => 'Stages and X Vector',
-        'jacobiResults' => 'T,C Vectors and Spectral Radius'
+        'jacobiResults' => 'T,C Vectors and Spectral Radius',
+        'iters' => 'Iterations Table'
     ],
 
     'elimination' => [
